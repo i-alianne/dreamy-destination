@@ -14,10 +14,65 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --accent-color: #f96d00;
+      }
+
+      body {
+        font-family: "Libre Baskerville", serif;
+      }
+
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/152/original/7710.jpg?1723201209");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 180px 0;
+      }
+
+      header h1 {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1;
+        margin: 30px 0;
+      }
+
+      header h3 {
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 50px;
+      }
+
+      .btn-light {
+        transition: all 200ms ease-in-out;
+      }
+
+      .btn-light:hover {
+        background: #f96d00;
+        color: white;
+      }
+    </style>
+    <title>Welcome to Venice</title>
   </head>
   <body>
-    <h1>Dreamy destination</h1>
+    <header>
+      <h1>Welcome to Venice</h1>
+      <h3>Where history meets romance at every turn</h3>
+      <a href="#" class="btn btn-light border-0 p-3">Learn more</a>
+    </header>
   </body>
   <footer>
     Coded with 💜 by
