@@ -77,6 +77,7 @@
       }
 
       .btn-light {
+        padding: 16px 20px;
         transition: all 200ms ease-in-out;
       }
 
@@ -106,12 +107,13 @@
         margin: 10px;
       }
 
-      .recommendations-section {
+      .attractions-section {
         background: var(--secondary-color);
       }
 
       .attraction {
         padding: 30px 0;
+        margin-bottom: 20px;
       }
 
       .attraction h3 {
@@ -123,9 +125,27 @@
         aspect-ratio: 1 / 1;
       }
 
-      .recommendations-img {
+      .attraction-img {
         object-fit: cover;
         height: 100%;
+      }
+
+      footer {
+        background: var(--main-color);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-style: normal;
+        font-size: 14px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: var(--accent-color);
       }
     </style>
     <title>Welcome to Venice</title>
@@ -134,7 +154,7 @@
     <header>
       <h1>Welcome to Venice</h1>
       <h3>Where history meets romance at every turn</h3>
-      <a href="#about" class="btn btn-light border-0 p-3">Learn more</a>
+      <a href="#about" class="btn btn-light border-0">Learn more</a>
     </header>
     <main>
       <div class="section container about" id="about">
@@ -150,11 +170,11 @@
           <div class="col-sm-6">
             <h2>About Venice</h2>
             <p>
-              Welcome to Venice, the City of Canals, where history, romance, and
-              beauty converge into an unforgettable experience. Dream of a
-              serene gondola ride through winding waterways, explore
-              centuries-old palazzos, or indulge in exquisite Italian
-              cuisine—Venice is the ultimate escape.
+              Welcome to the city of canals, where history, romance, and beauty
+              converge into an unforgettable experience. Dream of a serene
+              gondola ride through winding waterways, explore centuries-old
+              palazzos, or indulge in exquisite Italian cuisine—Venice is the
+              ultimate escape.
             </p>
             <p>
               Whether you prefer leisurely exploration or an action-packed
@@ -166,10 +186,10 @@
         </div>
       </div>
 
-      <div class="section recommendations-section">
-        <h2>Recomendations</h2>
-        <div class="attraction container">
-          <div class="row">
+      <div class="section attractions-section">
+        <h2>Iconic Attractions</h2>
+        <div class="container">
+          <div class="row attraction">
             <div class="col-md-6">
               <h3>1. St. Mark's Basilica (Basilica di San Marco)</h3>
               <p>
@@ -183,11 +203,11 @@
                 altarpiece, and the panoramic view from the basilica's terrace.
               </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 px-0">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/617/original/istockphoto-1345992450-612x612.jpg?1723405428"
                 alt=""
-                class="img-fluid recommendations-img"
+                class="img-fluid attraction-img"
               />
             </div>
             <div class="col-md-3">
@@ -199,6 +219,38 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div>
+          </div>
+
+          <div class="row attraction">
+            <div class="col-md-3 px-0">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/623/original/narrow-canal-old-colorful-brick-houses-venice-italy.jpg?1723407712"
+                alt=""
+                class="img-fluid attraction-img"
+              />
+            </div>
+            <div class="col-md-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11198.446378140909!2d12.315332060004408!3d45.43733039386855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1cf9b80b6c1%3A0x7bc9f4c104616008!2sGran%20Canal%20de%20Venecia!5e0!3m2!1ses!2ses!4v1723407504604!5m2!1ses!2ses"
+                class="embed-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-md-6">
+              <h3>2. The Grand Canal (Canal Grande)</h3>
+              <p>
+                <strong>Description:</strong> The Grand Canal is the main
+                waterway of Venice, lined with magnificent palaces and bustling
+                with gondolas, vaporettos, and water taxis.
+              </p>
+              <p>
+                <strong>Must-See:</strong> A gondola ride at sunset or a
+                vaporetto ride from the Rialto Bridge to St. Mark’s Square.
+              </p>
             </div>
           </div>
         </div>
@@ -273,7 +325,11 @@
     </main>
   </body>
   <footer>
-    Coded with 💜 by
-    <a href="https://i-alianne.com/" target="_blank">Alianne</a>
+    <p>
+      Coded with 🧡 by
+      <a href="https://i-alianne.com/" target="_blank" rel="noopener noreferrer"
+        >Alianne</a
+      >. <br />This project was created to participate in a SheCodes challenge.
+    </p>
   </footer>
 </html>
