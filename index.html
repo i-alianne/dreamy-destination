@@ -38,6 +38,7 @@
         line-height: 1;
         margin: 30px 0;
         color: var(--main-color);
+        text-align: center;
       }
 
       p {
@@ -98,15 +99,15 @@
         background-color: white;
       }
 
-      .gallery h2 {
-        text-align: center;
-      }
-
       .gallery-img {
         object-fit: cover;
         width: 400px;
         height: 400px;
         margin: 10px;
+      }
+
+      .recomendations {
+        background: var(--secondary-color);
       }
     </style>
     <title>Welcome to Venice</title>
@@ -115,10 +116,10 @@
     <header>
       <h1>Welcome to Venice</h1>
       <h3>Where history meets romance at every turn</h3>
-      <a href="#" class="btn btn-light border-0 p-3">Learn more</a>
+      <a href="#about" class="btn btn-light border-0 p-3">Learn more</a>
     </header>
     <main>
-      <div class="section container about">
+      <div class="section container about" id="about">
         <div class="row">
           <div class="col-sm-6">
             <img
@@ -146,6 +147,11 @@
           </div>
         </div>
       </div>
+
+      <div class="section recomendations">
+        <h2>Recomendations</h2>
+      </div>
+
       <div class="section gallery">
         <h2>Gallery</h2>
         <div class="container">
