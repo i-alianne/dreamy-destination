@@ -88,7 +88,7 @@
       .section {
         max-width: 1400px;
         margin: 0 auto;
-        padding: 90px;
+        padding: 70px 90px;
       }
 
       .about {
@@ -106,8 +106,26 @@
         margin: 10px;
       }
 
-      .recomendations {
+      .recommendations-section {
         background: var(--secondary-color);
+      }
+
+      .attraction {
+        padding: 30px 0;
+      }
+
+      .attraction h3 {
+        margin: 30px 0;
+      }
+
+      .embed-map {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+
+      .recommendations-img {
+        object-fit: cover;
+        height: 100%;
       }
     </style>
     <title>Welcome to Venice</title>
@@ -148,8 +166,42 @@
         </div>
       </div>
 
-      <div class="section recomendations">
+      <div class="section recommendations-section">
         <h2>Recomendations</h2>
+        <div class="attraction container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>1. St. Mark's Basilica (Basilica di San Marco)</h3>
+              <p>
+                <strong>Description:</strong> A masterpiece of Byzantine
+                architecture, St. Mark's Basilica is Venice's most famous
+                church, adorned with stunning mosaics and housing the relics of
+                St. Mark.
+              </p>
+              <p>
+                <strong>Must-See:</strong> The Pala d'Oro, an intricate gold
+                altarpiece, and the panoramic view from the basilica's terrace.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/617/original/istockphoto-1345992450-612x612.jpg?1723405428"
+                alt=""
+                class="img-fluid recommendations-img"
+              />
+            </div>
+            <div class="col-md-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.7488268064844!2d12.337137475758006!3d45.43456433541625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d764526cbf%3A0xa12d52783aca205!2sBas%C3%ADlica%20de%20San%20Marcos!5e0!3m2!1ses!2ses!4v1723404808161!5m2!1ses!2ses"
+                class="embed-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="section gallery">
