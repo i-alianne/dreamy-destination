@@ -150,13 +150,30 @@
       }
 
       @media (max-width: 768px) {
-        h1 {
-          font-size: 48px;
+        header {
+          padding: 60px;
         }
-      }
 
-      h2 {
-        font-size: 36px;
+        header h1 {
+          font-size: 60px;
+        }
+
+        header h3 {
+          font-size: 22px;
+        }
+
+        h2 {
+          font-size: 36px;
+        }
+
+        .section {
+          padding: 30px;
+        }
+
+        .attraction {
+          margin: 0;
+          padding: 0;
+        }
       }
     </style>
     <title>Welcome to Venice</title>
@@ -201,7 +218,7 @@
         <h2>Iconic Attractions</h2>
         <div class="container">
           <div class="row attraction">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <h3>1. St. Mark's Basilica (Basilica di San Marco)</h3>
               <p>
                 <strong>Description:</strong> A masterpiece of Byzantine
@@ -214,14 +231,14 @@
                 altarpiece, and the panoramic view from the basilica's terrace.
               </p>
             </div>
-            <div class="col-md-3 d-none d-md-block">
+            <div class="col-md-3 px-0 d-none d-md-block">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/617/original/istockphoto-1345992450-612x612.jpg?1723405428"
                 alt=""
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 d-none d-md-block">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.7488268064844!2d12.337137475758006!3d45.43456433541625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d764526cbf%3A0xa12d52783aca205!2sBas%C3%ADlica%20de%20San%20Marcos!5e0!3m2!1ses!2ses!4v1723404808161!5m2!1ses!2ses"
                 class="embed-map"
@@ -241,7 +258,7 @@
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 d-none d-md-block">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11198.446378140909!2d12.315332060004408!3d45.43733039386855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1cf9b80b6c1%3A0x7bc9f4c104616008!2sGran%20Canal%20de%20Venecia!5e0!3m2!1ses!2ses!4v1723407504604!5m2!1ses!2ses"
                 class="embed-map"
@@ -251,7 +268,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <h3>2. The Grand Canal (Canal Grande)</h3>
               <p>
                 <strong>Description:</strong> The Grand Canal is the main
@@ -278,14 +295,14 @@
                 Council Chamber, and a walk across the Bridge of Sighs.
               </p>
             </div>
-            <div class="col-md-3 d-none d-md-block">
+            <div class="col-md-3 px-0 d-none d-md-block">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/754/original/Doge.Palace02.jpeg?1723465741"
                 alt=""
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 d-none d-md-block">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.791348723871!2d12.33781447575802!3d45.43370723547345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d76e418489%3A0xb809d204dcca74d1!2sPalacio%20Ducal%20de%20Venecia!5e0!3m2!1ses!2ses!4v1723465541480!5m2!1ses!2ses"
                 class="embed-map"
@@ -305,7 +322,7 @@
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 d-none d-md-block">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.580543806814!2d12.333740325758239!3d45.43795623519004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c7faa33a3b%3A0x732011a1298ecc89!2sPuente%20de%20Rialto!5e0!3m2!1ses!2ses!4v1723465902670!5m2!1ses!2ses"
                 class="embed-map"
@@ -331,7 +348,7 @@
 
           <div class="row attraction">
             <div class="col-md-6">
-              <h3>The Gallerie dell'Accademia</h3>
+              <h3>5. The Gallerie dell'Accademia</h3>
               <p>
                 <strong>Description:</strong> Venice’s premier art gallery, the
                 Gallerie dell'Accademia, houses an impressive collection of
@@ -342,14 +359,14 @@
                 Tintoretto, and Veronese.
               </p>
             </div>
-            <div class="col-md-3 d-none d-md-block">
+            <div class="col-md-3 px-0 d-none d-md-block">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/761/original/gallerie_academia.jpg?1723466227"
                 alt=""
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 d-none d-md-block">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.921579670389!2d12.325564475757892!3d45.431082135648595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1ce021dc073%3A0xcb39dadfeea7176b!2sGalerias%20dell&#39;Academia!5e0!3m2!1ses!2ses!4v1723466119704!5m2!1ses!2ses"
                 class="embed-map"
