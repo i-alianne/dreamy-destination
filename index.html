@@ -126,8 +126,9 @@
       }
 
       .attraction-img {
+        aspect-ratio: 1 / 1;
         object-fit: cover;
-        height: 100%;
+        width: 100%;
       }
 
       footer {
@@ -147,6 +148,16 @@
         text-decoration: none;
         color: var(--accent-color);
       }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      h2 {
+        font-size: 36px;
+      }
     </style>
     <title>Welcome to Venice</title>
   </head>
@@ -159,7 +170,7 @@
     <main>
       <div class="section container about" id="about">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6 d-none d-md-block">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/631/original/basilica-santa-maria-della-salud-venice.jpg?1723409497"
               alt="Basilica Santa Maria della Salud"
@@ -167,7 +178,7 @@
             />
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <h2>About Venice</h2>
             <p>
               Welcome to the city of canals, where history, romance, and beauty
@@ -203,14 +214,14 @@
                 altarpiece, and the panoramic view from the basilica's terrace.
               </p>
             </div>
-            <div class="col-md-3 px-0">
+            <div class="col-md-3 d-none d-md-block">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/617/original/istockphoto-1345992450-612x612.jpg?1723405428"
                 alt=""
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.7488268064844!2d12.337137475758006!3d45.43456433541625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d764526cbf%3A0xa12d52783aca205!2sBas%C3%ADlica%20de%20San%20Marcos!5e0!3m2!1ses!2ses!4v1723404808161!5m2!1ses!2ses"
                 class="embed-map"
@@ -223,14 +234,14 @@
           </div>
 
           <div class="row attraction">
-            <div class="col-md-3 px-0">
+            <div class="col-md-3 px-0 d-none d-md-block">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/623/original/narrow-canal-old-colorful-brick-houses-venice-italy.jpg?1723407712"
                 alt=""
                 class="img-fluid attraction-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11198.446378140909!2d12.315332060004408!3d45.43733039386855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1cf9b80b6c1%3A0x7bc9f4c104616008!2sGran%20Canal%20de%20Venecia!5e0!3m2!1ses!2ses!4v1723407504604!5m2!1ses!2ses"
                 class="embed-map"
@@ -253,6 +264,102 @@
               </p>
             </div>
           </div>
+
+          <div class="row attraction">
+            <div class="col-md-6">
+              <h3>3. Doge's Palace (Palazzo Ducale)</h3>
+              <p>
+                <strong>Description:</strong> Once the residence of the Doge,
+                Venice's ruler, this Gothic palace is a symbol of Venice's
+                political power and artistic heritage.
+              </p>
+              <p>
+                <strong>Must-See:</strong> The Golden Staircase, the Grand
+                Council Chamber, and a walk across the Bridge of Sighs.
+              </p>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/754/original/Doge.Palace02.jpeg?1723465741"
+                alt=""
+                class="img-fluid attraction-img"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.791348723871!2d12.33781447575802!3d45.43370723547345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d76e418489%3A0xb809d204dcca74d1!2sPalacio%20Ducal%20de%20Venecia!5e0!3m2!1ses!2ses!4v1723465541480!5m2!1ses!2ses"
+                class="embed-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="row attraction">
+            <div class="col-md-3 px-0 d-none d-md-block">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/755/original/rialto.jpg?1723465981"
+                alt=""
+                class="img-fluid attraction-img"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.580543806814!2d12.333740325758239!3d45.43795623519004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c7faa33a3b%3A0x732011a1298ecc89!2sPuente%20de%20Rialto!5e0!3m2!1ses!2ses!4v1723465902670!5m2!1ses!2ses"
+                class="embed-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-md-6">
+              <h3>4. Rialto Bridge (Ponte di Rialto)</h3>
+              <p>
+                <strong>Description:</strong> The oldest and most iconic bridge
+                spanning the Grand Canal, the Rialto Bridge offers stunning
+                views and connects the bustling Rialto market with San Marco.
+              </p>
+              <p>
+                <strong>Must-See:</strong> The view of the Grand Canal from the
+                bridge and a stroll through the nearby markets.
+              </p>
+            </div>
+          </div>
+
+          <div class="row attraction">
+            <div class="col-md-6">
+              <h3>The Gallerie dell'Accademia</h3>
+              <p>
+                <strong>Description:</strong> Venice’s premier art gallery, the
+                Gallerie dell'Accademia, houses an impressive collection of
+                Venetian art from the 14th to 18th centuries.
+              </p>
+              <p>
+                <strong>Must-See:</strong> Works by masters like Titian,
+                Tintoretto, and Veronese.
+              </p>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/761/original/gallerie_academia.jpg?1723466227"
+                alt=""
+                class="img-fluid attraction-img"
+              />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.921579670389!2d12.325564475757892!3d45.431082135648595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1ce021dc073%3A0xcb39dadfeea7176b!2sGalerias%20dell&#39;Academia!5e0!3m2!1ses!2ses!4v1723466119704!5m2!1ses!2ses"
+                class="embed-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -260,28 +367,28 @@
         <h2>Gallery</h2>
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/517/original/img-boats-vertical.jpg?1723379332"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/518/original/img-canal-vertical.jpg?1723379363"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/519/original/img-boat-vertical.jpg?1723379417"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/520/original/imag-mask-vertical.jpg?1723379441"
                 alt=""
@@ -291,28 +398,28 @@
           </div>
 
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/522/original/horizontal-mask.jpg?1723379665"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/523/original/horizontal-boats.jpg?1723379685"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/524/original/horizontal-building.jpg?1723379706"
                 alt=""
                 class="img-fluid gallery-img"
               />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <img
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/525/original/horizontal-river.jpg?1723379726"
                 alt=""
